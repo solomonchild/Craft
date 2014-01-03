@@ -1467,7 +1467,7 @@ int main(int argc, char **argv) {
     #endif
     srand(time(NULL));
     rand();
-    if (argc == 2 || argc == 3) {
+    if (argc > 1){
         char *hostname = argv[1];
         int port = DEFAULT_PORT;
         if (argc == 3) {
